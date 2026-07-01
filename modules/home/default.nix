@@ -1,5 +1,6 @@
 { lib, ... }:
 {
-  # Esto escanea automáticamente 'desktop' y 'programs'
-  imports = lib.filesystem.listFilesRecursive ./.;
+  imports = 
+    lib.filesystem.listFilesRecursive ./desktop ++
+    lib.filesystem.listFilesRecursive ./programs;
 }

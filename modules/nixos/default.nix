@@ -1,5 +1,6 @@
 { lib, ... }:
 {
-  # Esto escanea automáticamente 'config' y 'system'
-  imports = lib.filesystem.listFilesRecursive ./.;
+  imports = 
+    lib.filesystem.listFilesRecursive ./system ++
+    lib.filesystem.listFilesRecursive ./config;
 }
