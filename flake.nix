@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     
     home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs"
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
  
   outputs = { self, nixpkgs, home-manager, ... }: {
@@ -31,7 +31,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.ciruela = import ./modules/home/ciruela.nix;
-          };
+          }
         ];
       };
     };
