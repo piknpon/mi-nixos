@@ -3,7 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix     # Nuestro hardware generado
-    ../../modules/core/default.nix   # Nuestros ingredientes core
+    ../../modules/nixos/default.nix 
   ];
 
   # Identidad única de esta máquina
