@@ -18,7 +18,8 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.ciruela = import ./modules/home/ciruela.nix;
+            # APUNTAMOS AL DIRECTORIO (Nix buscará default.nix automáticamente)
+            home-manager.users.ciruela = import ./modules/home;
           }
         ];
       };
@@ -30,7 +31,8 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.ciruela = import ./modules/home/ciruela.nix;
+            # APUNTAMOS AL DIRECTORIO
+            home-manager.users.ciruela = import ./modules/home;
           }
         ];
       };
