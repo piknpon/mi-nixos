@@ -2,7 +2,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../modules/core/default.nix
+    ../../modules/nixos/default.nix
   ];
 
   networking.hostName = "vm-pink";
