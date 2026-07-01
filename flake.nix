@@ -10,5 +10,10 @@
       system = "x86_64-linux";
       modules = [ ./hosts/vm-red/default.nix ];
     };
+     
+    nixosConfigurations.vm-pink = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [ ./hosts/vm-pink/default.nix ];
+    };
   };
 }
